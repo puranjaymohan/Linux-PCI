@@ -3136,7 +3136,7 @@ MODULE_DEVICE_TABLE(pci, skd_pci_tbl);
 
 static char *skd_pci_info(struct skd_device *skdev, char *str)
 {
-	int pcie_reg;
+	u8 pcie_reg;
 
 	strcpy(str, "PCIe (");
 	pcie_reg = pci_find_capability(skdev->pdev, PCI_CAP_ID_EXP);

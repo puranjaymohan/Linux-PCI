@@ -3936,7 +3936,7 @@ static DEFINE_HANDLER(7);
 
 static void mtip_disable_link_opts(struct driver_data *dd, struct pci_dev *pdev)
 {
-	int pos;
+	u8 pos;
 	unsigned short pcie_dev_ctrl;
 
 	pos = pci_find_capability(pdev, PCI_CAP_ID_EXP);
