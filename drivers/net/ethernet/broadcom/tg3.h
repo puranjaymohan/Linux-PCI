@@ -3268,7 +3268,7 @@ struct tg3 {
 
 	int				pci_fn;
 	int				msi_cap;
-	int				pcix_cap;
+	u8				pcix_cap;
 	int				pcie_readrq;
 
 	struct mii_bus			*mdio_bus;
